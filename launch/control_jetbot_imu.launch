@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="mavros" type="mavros_node" name="mavros" args="_fcu_url:=/dev/ttyACM0:921600" output="screen"/>
+ 	<node pkg="jetbot_imu" type="control_jetbot_imu.py" name="control_jetbot_imu" output="screen"/>
+	
+</launch>
